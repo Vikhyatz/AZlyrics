@@ -76,8 +76,8 @@ app.get('/lyrics', (req, res) => {
 })
 
 
+const PORT = process.env.PORT || 3000;
 
-// listening the server at port 3000 and rendering
-server.listen(3000, () => {
-    console.log('listening on http://localhost:3000')
-})
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
